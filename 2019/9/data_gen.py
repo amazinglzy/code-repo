@@ -84,7 +84,7 @@ print(' '.join(map(str, ci)))
 for i in range(n):
     root = random.randint(0, ci[i]-1)
     for p, u, tag in standard_tree_edges(root, tagging_tree(root, gen_random_tree(ci[i]), generate_tag) ):
-        print(p, u, tag)
+        print(p, u, random.randint(0, 1), tag)
 
 m = 10
 print(m)
